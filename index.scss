@@ -1,0 +1,105 @@
+$mainbgcolor: #333;
+
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: #222;
+    height: 100vh;
+    display: flex;
+    transition-duration: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button,
+input {
+    display: block;
+    border: none;
+    font-size: 27px;
+    border-radius: 5px;
+}
+button {
+    cursor: grab;
+}
+
+.darkmode-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    &:hover {
+        i {
+            color: #ffbf2b;
+        }
+    }
+    button {
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        color: white;
+        transition-duration: 0.4s;
+        i {
+            font-size: 25px;
+            transition-duration: 0.4s;
+        }
+    }
+}
+
+.darkmode {
+    background-color: #fff;
+}
+
+.black {
+    color: black !important;
+}
+
+.calculator {
+    width: 350px;
+    margin: auto;
+    color: white;
+    padding: 20px 15px;
+    background-color: #111;
+    border-radius: 10px;
+    .input {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        input {
+            width: 74.5%;
+            height: 80px;
+            padding: 8px;
+            background-color: #444;
+            color: white;
+            letter-spacing: 1px;
+        }
+        button {
+            width: 24%;
+            height: 80px;
+            background-color: red;
+            color: white;
+            transition-duration: 0.4s;
+            &:hover {
+                background-color: rgba($color: red, $alpha: 0.9);
+            }
+        }
+    }
+    .buttons-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .button {
+            width: 24%;
+            height: 80px;
+            margin-bottom: 5px;
+            color: white;
+            background-color: #444;
+            transition-duration: 0.3s;
+            &:hover {
+                background-color: rgb(44, 44, 44);
+                // font-size: 35px;
+            }
+        }
+    }
+}
